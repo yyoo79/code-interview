@@ -55,7 +55,7 @@ class MinimizingPermutations {
                 
                 for (int j = 0; j < cur.Length; j++) {
                     
-                    for (int k = 0; k < cur.Length; k++) {
+                    for (int k = j + 1; k < cur.Length; k++) {
                         
                         int[] next = (int[])cur.Clone();
                         next = Reverse(next, j, k);
